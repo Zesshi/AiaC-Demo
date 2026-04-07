@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloudline Demo</title>
+    <meta
+      name="description"
+      content="A sleek static webpage demo built with HTML, CSS, and JavaScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+
+      <header class="site-header">
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <span>Cloudline</span>
+        </div>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#metrics">Metrics</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Static site demo for Azure deployments</p>
+            <h1>Deploy something simple that still looks sharp.</h1>
+            <p class="hero-text">
+              This example page is built with plain HTML, CSS, and JavaScript,
+              designed to feel modern, fast, and presentation-ready for a demo.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#features">Explore demo</a>
+              <button class="button button-secondary" id="themeToggle" type="button">
+                Shift mood
+              </button>
+            </div>
+            <div class="status-row">
+              <div class="status-chip">
+                <span class="chip-label">Environment</span>
+                <strong>Static Web App</strong>
+              </div>
+              <div class="status-chip">
+                <span class="chip-label">Updated</span>
+                <strong id="timestamp">Loading...</strong>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <div class="card-topline">Live snapshot</div>
+            <div class="card-metric">
+              <span class="metric-value" data-target="99.98">0</span>
+              <span class="metric-unit">%</span>
+            </div>
+            <p class="card-copy">Uptime-style visual metric animated with vanilla JavaScript.</p>
+            <div class="mini-grid">
+              <div>
+                <span>Pages</span>
+                <strong>1</strong>
+              </div>
+              <div>
+                <span>Assets</span>
+                <strong>3</strong>
+              </div>
+              <div>
+                <span>Stack</span>
+                <strong>HTML/CSS/JS</strong>
+              </div>
+              <div>
+                <span>Hosting</span>
+                <strong>Azure</strong>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="feature-strip" id="features">
+          <article class="feature-card">
+            <span class="feature-index">01</span>
+            <h2>Clean and responsive</h2>
+            <p>Scales neatly from laptop presentation screens down to mobile.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">02</span>
+            <h2>Modern visual style</h2>
+            <p>Glass surfaces, layered gradients, and subtle motion without frameworks.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">03</span>
+            <h2>Easy to deploy</h2>
+            <p>Just upload the files and serve them as a basic static site.</p>
+          </article>
+        </section>
+
+        <section class="metrics-panel" id="metrics">
+          <div class="section-heading">
+            <p class="eyebrow">Overview</p>
+            <h2>A compact demo page with enough polish to feel real.</h2>
+          </div>
+          <div class="metrics-grid">
+            <div class="metric-box">
+              <span>Fast launch</span>
+              <strong>Under 1 min</strong>
+            </div>
+            <div class="metric-box">
+              <span>Frameworks</span>
+              <strong>None required</strong>
+            </div>
+            <div class="metric-box">
+              <span>Custom styling</span>
+              <strong>100% CSS</strong>
+            </div>
+            <div class="metric-box">
+              <span>Interactive touch</span>
+              <strong>Vanilla JS</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-panel" id="contact">
+          <div>
+            <p class="eyebrow">Ready for demo day</p>
+            <h2>Use this as-is, or swap the content for your own Azure pitch.</h2>
+          </div>
+          <a class="button button-primary" href="mailto:demo@example.com">Contact demo team</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
